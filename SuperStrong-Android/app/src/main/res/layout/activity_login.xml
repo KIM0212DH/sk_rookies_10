@@ -1,0 +1,79 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.superstrong.android.viewmodel.LoginViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="227dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textColorHint="#d9d9d9"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text"
+            android:text="@{viewModel.username}" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:textColorHint="#d9d9d9"
+            android:background="@drawable/edit_text"
+            android:inputType="textPassword"
+            android:layout_marginBottom="50dp"
+            android:text="@{viewModel.password}" />
+
+        <android.widget.Button
+            android:id="@+id/loginBtn"
+            android:background="@drawable/round_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="30dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:minWidth="50dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:minHeight="50dp" />
+
+        <Button
+            android:id="@+id/findPassBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:minWidth="50dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:minHeight="50dp" />
+
+    </LinearLayout>
+</layout>

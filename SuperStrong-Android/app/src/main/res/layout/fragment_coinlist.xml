@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/coin_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/coin_name1"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:text="BTC"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/coin_balance1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="100.00000"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/toolbar_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#AEAEAE"
+        app:layout_constraintTop_toBottomOf="@+id/coin_layout1" />
+
+    <LinearLayout
+        android:id="@+id/coin_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/coin_layout1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/coin_name2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="ETH"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/coin_balance2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="100.00000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/toolbar_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#AEAEAE"
+        app:layout_constraintTop_toBottomOf="@+id/coin_layout2" />
+
+    <LinearLayout
+        android:id="@+id/coin_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/coin_layout2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/coin_name3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="DOGE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/coin_balance3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="100.00000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="28dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/toolbar_line3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#AEAEAE"
+        app:layout_constraintTop_toBottomOf="@+id/coin_layout3" />
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Signup4Fragment">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 이용약관 -->
+
+        <!-- 메타머스크 이용약관 동의 -->
+
+        <!-- 개인정보 수집 및 이용 동의 -->
+
+
+
+        <View
+            android:id="@+id/toolbar_line"
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+            android:background="#AEAEAE" />
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록이 완료되었습니다"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal= "true"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="환영합니다"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal= "true"
+            android:textStyle="bold"
+            />
+
+        <android.widget.Button
+            android:id="@+id/confirm_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/round_button"
+            android:text="확인"
+            android:textColor="#FFFFFF" />
+
+
+
+    </RelativeLayout>
+</FrameLayout>

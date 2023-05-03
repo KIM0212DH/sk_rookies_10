@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Chpasswd2Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="755dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:text="새로운 비밀번호를 입력해주세요"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pass1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="비밀번호"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text="다시한번 입력해주세요"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pass2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="비밀번호 확인"/>
+
+        <android.widget.Button
+            android:id="@+id/setpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="확인"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/round_button"/>
+
+        <TextView
+            android:id="@+id/samepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호가 일치하지 않습니다."
+            android:textColor="@color/red"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</FrameLayout>
